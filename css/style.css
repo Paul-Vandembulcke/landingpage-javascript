@@ -1,0 +1,201 @@
+/*********************VERSION PC*********************/
+/*********************DEBUT DU BODY*********************/
+/*CSS*/
+body { /*corps de la page*/
+    margin : 0px; /*marge est de 0*/
+}
+/*********************DEBUT DU MAIN*********************/
+/*CSS*/
+main{
+    transition-duration: 15s;
+    background-color:#3f4c79; /*Definit la couleur du fond*/
+    color: #ffffff; /*Definit la couleur du texte*/
+}
+
+#img{ /*id de toute les images*/ 
+    width: 10%; /*définit leurs tailles*/
+    padding: 1em;
+}
+/*********************DEBUT DU HEADER*********************/
+/*CSS*/
+header{ /*header*/
+    background-color:#242951; /*Definit la couleur du fond*/  
+}
+
+.titre{ /*Titre de page header*/
+    margin: 0px; /*pas de marge*/
+    width: 90%; /*titre prend 90% de la place*/
+}
+
+/*Flex*/
+.headerdiv{ /*div du header logo & titre*/
+    display: flex; /*flex le contenu*/
+    align-items: center; /*aligne le contenu au centre de la colonne*/
+}
+
+div h1{ /*titre*/
+    width: 80%; /* taille que prend la div*/
+    display: flex; /*flex le contenu*/
+    justify-content: center; /*aligne le contenu au centre de la ligne*/
+}
+
+.logo {
+    display: flex; /*flex le contenu*/
+    width: 10%; /*taille quelle prend*/
+}
+/*********************FIN DU HEADER*********************/
+
+/*********************DEBUT DE LA SECTION 1*********************/
+/*Flex*/
+.description{ /*Description générale avec le txt & img*/
+    display:flex ; /*flex le contenu*/
+    align-items: center; /*aligne le contenu au centre de la colonne*/
+}
+/*********************FIN DE LA SECTION 1*********************/
+
+/*********************DEBUT DE LA DIV 1*********************/
+/*Flex*/
+.div-menu-cararcteristique{ /*menu et caractéristiques*/
+    margin: 0px; /*marge est de 0*/
+    display: flex; /*flex le contenu*/
+    justify-content: space-between; /*aligne le contenu avec un espace égal entre eux*/
+    align-items: center; /*aligne le contenu au centre de la colonne*/
+}
+
+.div-menu{ /*Nav*/
+    display: flex; /*flex le contenu*/
+    flex-direction: column; /*aligne le contenu en colonne*/
+    align-items: flex-start; /*aligne le contenu à gauche de la colonne*/
+}
+
+.menu{ /*Menu*/
+    display: flex; /*flex le contenu*/
+    flex-direction: column; /*aligne le contenu en colonne*/
+    align-items: flex-start; /*aligne le contenu à gauche de la colonne*/
+}
+
+a{ /*liens hyper texte*/
+    color: #ffffff; /*Definit la couleur du texte*/
+}
+
+/*caractéristiques générales*/
+.titre-caractéristiques{ /*titre dela section*/
+    display: flex; /*flex le contenu*/
+    justify-content: flex-end; /*aligne le contenu à droite de la colonne*/
+}
+
+.list-caractéristiques{ /*liste des caractéristiques*/
+    display: flex; /*flex le contenu*/
+    align-items: flex-end; /*aligne le contenu à droite de la colonne*/
+    flex-direction: column; /*aligne le contenu en colonne*/
+}
+/*********************FIN DE LA DIV 1*********************/
+
+/*********************DEBUT DE LA SECTION 2*********************/
+/*Flex*/
+#wifi{ /*Wifi avec le txt & img*/
+    display:flex ; /*flex le contenu*/
+    align-items: center; /*aligne le contenu au centre de la colonne*/
+}
+/*********************FIN DE LA SECTION 2*********************/
+
+/*********************DEBUT DE LA SECTION 3*********************/
+/*Flex*/
+#vocal{ /*Commande vocale avec le txt & img*/
+    display: flex; /*flex le contenu*/
+    align-items: center; /*aligne le contenu au centre de la colonne*/
+    justify-content: space-around; /*aligne le contenu  avec un espacement égal autour d'eux*/
+}
+/*********************FIN DE LA SECTION 3*********************/
+
+/*********************DEBUT DE LA SECTION 4*********************/
+/*Flex*/
+#horaire{ /*Programmation d'horaire avec le txt & img*/
+    display:flex ; /*flex le contenu*/
+    align-items: center; /*aligne le contenu au centre de la colonne*/
+}
+/*********************FIN DE LA SECTION 4*********************/
+
+/*********************DEBUT DE LA SECTION 5*********************/
+/*Flex*/
+#distance{ /*Contrôle à distance avec le txt & img*/
+    display:flex ; /*flex le contenu*/
+    align-items: center; /*aligne le contenu au centre de la colonne*/
+    justify-content: space-around; /*aligne le contenu  avec un espacement égal autour d'eux*/
+}
+/*********************FIN DE LA SECTION 5*********************/
+
+/*********************DEBUT DE LA SECTION 6*********************/
+/*Flex*/
+#consommation{ /*Consommation d'énergie avec le txt & img*/
+    display:flex ; /*flex le contenu*/
+    align-items: center; /*aligne le contenu au centre de la colonne*/
+}
+/*********************FIN DE LA SECTION 6*********************/
+
+/*********************DEBUT DU FOOTER*********************/
+footer{ /*Footer avec le txt & img*/
+    background-color:#242951; /*Definit la couleur du fond*/
+}
+
+footer h1 { /*titre du footer*/
+    display: flex; /*flex le contenu*/
+   justify-content: center; /*aligne le contenu au centre de la colonne*/
+}
+
+.list-footer{
+    display: flex; /*flex le contenu*/
+    justify-content: space-around; /*aligne le contenu au centre de la ligne*/
+    align-items: center; /*aligne le contenu au centre de la colonne*/
+}
+/*********************FIN DU FOOTER*********************/
+/*********************FIN DU MAIN*********************/
+/*********************FIN DU BODY*********************/
+
+/*********************VERSION TEL*********************/
+/*ci si l'écran fait moins de 480 pixel donc un téléphone*/
+@media all and (max-device-width: 480px) {
+/*********************DEBUT DU MAIN*********************/
+/*CSS*/
+.txt-description{ /*titre & texte*/
+    font-size: x-small; /*réduit la taille du texte*/
+}
+
+#wifi{
+    font-size: xx-small; /*réduit la taille du texte*/
+}
+
+#vocal{/*titre & texte*/
+    font-size: x-small; /*réduit la taille du texte*/
+}
+
+#horaire{ /*titre & texte*/
+    font-size: xx-small; /*réduit la taille du texte*/
+}   
+
+#distance { /*titre & texte*/
+    font-size: x-small; /*réduit la taille du texte*/
+}
+
+#consommation{ /*titre & texte*/
+    font-size: xx-small; /*réduit la taille du texte*/
+}
+
+footer{ /*titre & texte*/
+    font-size: x-small; /*réduit la taille du texte*/
+}
+
+/*FLEX*/
+.div-menu { /*nav*/
+    width: 50%; /*donne la moitié de la place*/
+    display: flex; /*flex le contenu*/
+    flex-direction: column; /*aligne le contenu en colonne*/
+    align-items: flex-start; /*aligne le contenu à gauche de la colonne*/
+}
+.list-caractéristiques {
+    margin: auto; /*les marges sont sur les côtés pour afficher la liste au centre*/
+    width: 45%; /*donne 45% de la place*/
+    flex-direction: column; /*aligne le contenu en colonne*/
+}
+}
+/*********************FIN*********************/
