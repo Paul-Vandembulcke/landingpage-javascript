@@ -25,12 +25,13 @@ mainColor.addEventListener("changeCoulorBackground", backgroundColor)
 backgroundColor()
 
 
-//Réagir à un évènement
+//Réagir à un évènement & lire un evenement
 const susTitle = document.getElementById("Sus") //Titre header 'suspect' car il a une color différente du reste du texte
-susTitle.addEventListener("click",() => {
-    var audio = new Audio('./mp3/Sound.mp3'); //Vaiable audoi
-    audio.play(); //Lecture de l'audio
-    //Ajouter ou supprimer des classes sur un élément
-    susTitle.classList.toggle("Imposteur")
+susTitle.addEventListener("click",(event) => {
+    if(event.target.classList.value === 'titre') //Réagir à un évènement
+        var audio = new Audio('./mp3/Sound.mp3'); //Vaiable audio
+        audio.play(); //Lecture de l'audio & lire un evenement
+        //Ajouter ou supprimer des classes sur un élément
+        susTitle.classList.toggle("Imposteur")
 })
 
